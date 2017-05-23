@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="tab.css">
+  <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+  <div class="tab">
+    <ul class="tab-header clearfix">
+      <li class="active">热门</li>
+      <li>珠宝首饰</li>
+      <li>奢侈品</li>
+    </ul>
+    <ul class="tab-container clearfix">
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab">
+    <ul class="tab-header clearfix">
+      <li class="active">热门</li>
+      <li>珠宝首饰</li>
+      <li>奢侈品</li>
+    </ul>
+    <ul class="tab-container clearfix">
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+      <li class="main">
+        <div class="cover">
+          <a href="#" class="btn">立即抢购</a>
+        </div>
+        <img src="img/1.png">
+        <p>藏美千足金和田玉金镶玉路路通吊坠</p>
+        <p>￥1699.00</p>
+      </li>
+    </ul>
+  </div>
+  <script>
+    $('.tab-header>li').on('click',function(){
+      var index = $(this).index();
+      
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+
+      $(this).parents('.tab').find('.tab-container li').removeClass('active');
+      $(this).parents('.tab').find('.tab-container li').eq(index).addClass('active');
+      $('.tab-container .active>img').attr('src','img/2.png')
+    })
+  </script>
+</body>
+</html>

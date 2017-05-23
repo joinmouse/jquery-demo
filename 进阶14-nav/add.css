@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.tab {
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+/*--设置tab-container部分的样式--*/
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.main {
+  float: left;
+  position: relative;
+  border: 1px solid #ccc;
+  width:230px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.main .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+}
+.main .cover .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  color: red;
+}
+.main .cover:hover {
+  opacity: 1;
+}
+
+.add-more {
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  display: inline-block;
+  background: #f00;
+  color: #fff;
+}

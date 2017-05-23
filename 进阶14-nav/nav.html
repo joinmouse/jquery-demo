@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li class="main">
+        <a href="#">珠宝玉器</a>
+        <span>></span>
+        <ul class="main-ct  clearfix">
+          <li><a href="#">翡翠</a></li>
+          <li><a href="#">玉石</a></li>
+          <li><a href="#">宝石</a></li>
+          <li><a href="#">琥珀</a></li>
+        </ul>
+      </li>
+      
+      <li class="main">
+        <a href="#">珠宝玉器</a>
+        <span>></span>
+        <ul class="main-ct  clearfix">
+          <li><a href="#">翡翠</a></li>
+          <li><a href="#">玉石</a></li>
+          <li><a href="#">宝石</a></li>
+          <li><a href="#">水晶</a></li>
+          <li><a href="#">玛瑙</a></li>
+          <li><a href="#">珍珠</a></li>
+        </ul>
+      </li>
+      
+      <li class="main">
+        <a href="#">珠宝玉器</a>
+        <span>></span>
+        <ul class="main-ct  clearfix">
+          <li><a href="#">玉石</a></li>
+          <li><a href="#">宝石</a></li>
+        </ul>
+      </li>
+      
+      <li class="main">
+        <a href="#">珠宝玉器</a>
+        <span>></span>
+        <ul class="main-ct  clearfix">
+          <li><a href="#">水晶</a></li>
+          <li><a href="#">玛瑙</a></li>
+          <li><a href="#">珍珠</a></li>
+          <li><a href="#">琥珀</a></li>
+        </ul>
+      </li>
+      
+      <li class="main">
+        <a href="#">珠宝玉器</a>
+        <span>></span>
+        <ul class="main-ct  clearfix">
+          <li><a href="#">翡翠</a></li>
+          <li><a href="#">玉石</a></li>
+          <li><a href="#">宝石</a></li>
+          <li><a href="#">水晶</a></li>
+          <li><a href="#">和田</a></li>
+          <li><a href="#">琥珀</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+  
+  <script>  
+		  $(".main").on("mouseover",function(){
+		    $(this).find(".main-ct").show();
+	    });
+	    $(".main").on("mouseout",function(){
+		    $(this).find(".main-ct").hide();
+      });
+  </script>
+  </body>
+  </html>
